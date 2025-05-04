@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Rental Kamera</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .hero {
+      background: url('kamera.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .form-rental {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .form-rental input,
+    .form-rental select,
+    .form-rental button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-rental input,
+    .form-rental select {
+      width: 160px;
+    }
+
+    .form-rental button {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-rental button:hover {
+      background-color: #218838;
+    }
+
+    .student-info {
+      margin: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="student-info">
+    Nama Mahasiswa : Marianus Belarminus Pada<br>
+    NIM Mahasiswa : 231110078
+  </div>
+
+  <div class="hero">
+    <div class="overlay">
+      <h1>Rental Kamera</h1>
+      <p>Silahkan isi form dibawah ini untuk mengecek ketersediaan kamera</p>
+
+      <form class="form-rental">
+        <input type="date" placeholder="Tanggal Pinjam" required>
+        <input type="date" placeholder="Tanggal Kembali" required>
+        <select required>
+          <option>Kamera 1</option>
+          <option>Kamera 2</option>
+          <option>Kamera 3</option>
+        </select>
+        <button type="submit">Cek Ketersediaan</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
