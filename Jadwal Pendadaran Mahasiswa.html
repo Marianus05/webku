@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jadwal Pendadaran Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .edit-btn {
+            background-color: #5bc0de;
+            color: white;
+            border: none;
+        }
+
+        .delete-btn {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="info">
+        <p>Nama Mahasiswa : Marianus Belarminus Pada</p>
+        <p>NIM Mahasiswa : 231110078</p>
+    </div>
+
+    <h2>Tabel Jadwal Pendadaran Mahasiswa</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Jurusan</th>
+                <th>Waktu</th>
+                <th>Dosen Penguji</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marianus Belarminus Pada</td>
+                <td>231110078</td>
+                <td>Informatika</td>
+                <td>25 April 2025, Pukul 11:00</td>
+                <td>Bapak Mutaqin Akbar</td>
+                <td>
+                    <button class="btn edit-btn">Edit</button>
+                    <button class="btn delete-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Marianus Belarminus Pada</td>
+                <td>231110078</td>
+                <td>Informatika</td>
+                <td>28 April 2025, Pukul 13:00</td>
+                <td>Bapak Supatman</td>
+                <td>
+                    <button class="btn edit-btn">Edit</button>
+                    <button class="btn delete-btn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Marianus Belarminus Pada</td>
+                <td>231110078</td>
+                <td>Informatika</td>
+                <td>24 April 2025, Pukul 09:00</td>
+                <td>Bapak Iman Suharjo</td>
+                <td>
+                    <button class="btn edit-btn">Edit</button>
+                    <button class="btn delete-btn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
